@@ -1,5 +1,5 @@
-[
-    {
+export default [
+     {
         "account_id": 291123,
         "first_name": "Lynda",
         "last_name": "Monnoyer",

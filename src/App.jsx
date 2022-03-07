@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css'
 import { Routes, Route, } from "react-router-dom";
-import Dashboard from './components/Dashboard';
 import PageError from './pages/PageError';
+import Dashboard from './components/dashboard/Dashboard';
 
 
 const App = () => {
+
 
   return (
     <div className="App" >
