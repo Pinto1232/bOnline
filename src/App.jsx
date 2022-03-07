@@ -1,15 +1,19 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
-import Data from '../src/Data.json'
+import { Routes, Route, } from "react-router-dom";
+import ErrorPage from './pages/errorPage';
+import Dashboard from './components/Dashboard';
 
-function App() {
-  const [data, setData] = useState([])
-  console.log(Data);
-  
+
+const App = () => {
 
   return (
-    <div className="App">
-     
+    <div className="App" >
+      <Routes>
+        <Route path="/" element={<Dashboard />}/>
+        <Route path='*' element={ <ErrorPage/>} />
+     </Routes>
+      
     </div>
   )
 }
