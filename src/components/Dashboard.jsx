@@ -22,7 +22,7 @@ const Dashboard = () =>
             });
     };
     useEffect(() => fetchData(null), []);
-    console.log('From dashboard', data);
+    console.log('From dashbo', data);
 
     return (
         <div>
