@@ -1,19 +1,11 @@
-import React from 'react'
+import { useState } from 'react'
 import './App.css'
-import { Routes, Route, } from "react-router-dom";
-import PageError from './pages/PageError';
-import Dashboard from './components/layout/Dashboard';
 
-
-const App = () => {
-
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <div className="App" >
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="*" element={<PageError />} />
-     </Routes>
+    <div className="App">
       
     </div>
   )
